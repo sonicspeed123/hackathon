@@ -1,8 +1,9 @@
 import React from 'react';
+import Landing from '../components/Landing';
 
 const App = () => (
   <div>
-    <Home />
+    <Landing />
   </div>
 );
 

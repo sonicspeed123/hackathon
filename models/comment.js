@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Comment = new Schema({
+	itemId: {type: String, required: true},
 	content: String
 });
 
