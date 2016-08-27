@@ -1,29 +1,26 @@
 import React from 'react';
 import $ from 'jquery';
+import TopicList from './Topiclist';
 
 
 class Topic extends React.Component {
 constructor(props) {
   super(props);
-  this.loadTopic = this.loadTopic.bind(this);
+  //this.loadTopic = this.loadTopic.bind(this);
 }
 
-loadTopic() {
-  $.ajax({
-    url: '/Topic',
-    type: 'GET',
-    dataType: 'JSON'
-  }).done(topic => {
-    this.setState({
-      topic
-    });
-  });
-}
+// loadTopic() {
+//
+// console.log("number one")
+// }
 
   render() {
       return (
-        <div onClick= this.loadTopic>
-        {this.props.name}
+        <div>
+          <TopicList />
+            <div>
+            {this.props.name}
+            </div>
         </div>
 
       )

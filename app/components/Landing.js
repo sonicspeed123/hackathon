@@ -6,9 +6,9 @@ import $ from 'jquery';
 class Landing extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = { topics: [{
+		this.state = { topic: [{
 			items: ['applebees', 'panda express'],
-			name: 'restaurantes'
+			name: 'restaurants'
 			},
 			{
 			items: ['yoga', 'crossfit'],
@@ -19,7 +19,7 @@ class Landing extends React.Component {
 	}
 
 	render() {
-		let topics = this.state.topics.map( topic => {
+		let topics = this.state.topic.map( topic => {
 			return(<div className='col s4 card'><div className='card-content'><Topic {...topic} /></div></div>)
 		})
 		return (
