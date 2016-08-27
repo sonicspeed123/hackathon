@@ -3,11 +3,16 @@ import React from 'react';
 
 
 class Topic extends React.Component {
+constructor(props) {
+  super(props);
+  this.state
+}
+
   render() {
       return (
         <div>
-         <p>this is the list of posible items</p>
-         <a href="../components/item">Item</a>
+         <
+
         </div>
 
       )
