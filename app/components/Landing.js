@@ -1,10 +1,23 @@
 import React from 'react';
+import Topic from './Topic';
+import $ from 'jquery';
+
 
 class Landing extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {topics: []};
+	}
+
+	componentWillMount(){
+		
+	}
+
 	render() {
+
 		return (
 			<div>
-				<p>this is it.</p>
+				<Topic />
 			</div>
 		)
 	}

@@ -6,7 +6,7 @@ class Topic extends React.Component {
   render() {
       return (
         <div>
-         <p>this is working</p>
+         <p>this is the list of posible items</p>
          <a href="../components/item">Item</a>
         </div>
       )
