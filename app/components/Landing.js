@@ -13,8 +13,7 @@ class Landing extends React.Component {
 			{
 			items: ['yoga', 'crossfit'],
 			name: 'fitness'
-			}
-			]
+			}]
 		}
 	}
 
