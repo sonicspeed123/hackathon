@@ -6,11 +6,11 @@ import $ from 'jquery';
 class Landing extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = {topics: []};
-	}
-
-	componentWillMount(){
-		
+		this.state = { topics: [{
+			items: ['applebees', 'panda express'],
+			name: 'restaurantes'
+			}]
+		}
 	}
 
 	render() {
