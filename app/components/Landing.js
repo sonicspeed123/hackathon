@@ -9,15 +9,22 @@ class Landing extends React.Component {
 		this.state = { topics: [{
 			items: ['applebees', 'panda express'],
 			name: 'restaurantes'
-			}]
+			},
+			{
+			items: ['yoga', 'crossfit'],
+			name: 'fitness'
+			}
+			]
 		}
 	}
 
 	render() {
-
+		let topics = this.state.topics.map( topic => {
+			return(<div className='col s4 card'><div className='card-content'><Topic {...topic} /></div></div>)
+		})
 		return (
-			<div>
-				<Topic />
+			<div className='row'>
+				{topics}
 			</div>
 		)
 	}
